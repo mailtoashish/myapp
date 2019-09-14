@@ -1,7 +1,7 @@
 apiVersion: apps/v1beta1
 kind: Deployment
 metadata:
-  name: myacart-frontend
+  name: mycart-frontend
   namespace: mycart
 spec:
   selector:
@@ -24,7 +24,7 @@ spec:
     spec:
       containers:
       - name: myappfe
-        image: mailtoashish/myappfrontend:2.0
+        image: gcr.io/google_containers/hpa-example
         imagePullPolicy: Always
         ports:
         - containerPort: 80
