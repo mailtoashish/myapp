@@ -1,0 +1,4 @@
+resname:
+  fe: frontend
+  be: backend
+  db: database
